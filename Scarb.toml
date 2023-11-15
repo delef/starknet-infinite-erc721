@@ -1,0 +1,17 @@
+[package]
+name = "nft_queue"
+version = "0.1.0"
+cairo-version = "2.3.1"
+authors = ["Ivan Palamarchuk <idelef@gmail.com>"]
+repository = "https://github.com/delef/nft-queue"
+
+[lib]
+
+[dependencies]
+starknet = ">=2.3.1"
+openzeppelin = { git = "https://github.com/OpenZeppelin/cairo-contracts.git", tag = "v0.8.0-beta.0" }
+alexandria_ascii = { git = "https://github.com/keep-starknet-strange/alexandria.git" }
+
+[[target.starknet-contract]]
+sierre = true
+casm = true
